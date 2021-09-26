@@ -9,27 +9,27 @@
 # 3.小米互联通信服务
 #com.xiaomi.mi_connect_service
 # 4.MIUI+
-#com.xiaomi.mirror
+com.xiaomi.mirror
 # 5.用户反馈
-#com.miui.bugreport
+com.miui.bugreport
 # 6.快应用
 #com.miui.hybrid
 #com.miui.quickappCenter.miAppStore
 #com.miui.hybrid.accessory
 # 7.Google通讯录
-#com.google.android.syncadapters.contacts
+com.google.android.syncadapters.contacts
 # 8.Google 通讯录备份
-#com.android.calllogbackup
+com.android.calllogbackup
 # 9.万象息屏
 #com.miui.aod
 # 10.小米互传
-#com.miui.mishare.connectivity
+com.miui.mishare.connectivity
 # 11.NFC
 #com.android.nfc
 # 12.小米智能卡
 #com.miui.tsmclient
 # 13.悬浮球
-#com.miui.touchassistant
+com.miui.touchassistant
 # 14.小米音乐
 #com.miui.player
 # 15.CIT
@@ -37,7 +37,7 @@
 # 16.MODEM测试工具
 #com.xiaomi.mtb
 # 17.传送门
-#com.miui.contentextension
+com.miui.contentextension
 # 18.内容中心
 #com.miui.newhome
 # 19.生活黄页(精简后可能无法获取来电地址)
@@ -51,7 +51,7 @@
 # 23.小米闻声
 #com.miui.accessibility
 # 24.用户手册
-#com.miui.userguide
+com.miui.userguide
 # 25.智能助理
 #com.miui.personalassistant
 #====================================================
@@ -91,7 +91,7 @@ com.miui.translation.kingsoft
 #盲猜是和金山翻译有关
 com.miui.translationservice
 #自动对准（集成电路工艺) [!]ps: 其实不建议精简
-com.qualcomm.qti.autoregistration
+#com.qualcomm.qti.autoregistration
 #CQR
 com.miui.qr
 #USIM卡应用
