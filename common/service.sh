@@ -40,19 +40,19 @@ echo "0" >/sys/module/msm_show_resume_irq/parameters/debug_mask
 echo "N" >/sys/kernel/debug/debug_enabled
 
 # 数据分区I/O控制器优化
-echo "128" >/sys/block/sda/queue/read_ahead_kb
-echo "36" >/sys/block/sda/queue/nr_requests
-echo "128" >/sys/block/sde/queue/read_ahead_kb
-echo "36" >/sys/block/sde/queue/nr_requests
-echo "128" >/sys/block/dm-5/queue/read_ahead_kb
-echo "36" >/sys/block/dm-5/queue/nr_requests
+#echo "128" >/sys/block/sda/queue/read_ahead_kb
+#echo "36" >/sys/block/sda/queue/nr_requests
+#echo "128" >/sys/block/sde/queue/read_ahead_kb
+#echo "36" >/sys/block/sde/queue/nr_requests
+#echo "128" >/sys/block/dm-5/queue/read_ahead_kb
+#echo "36" >/sys/block/dm-5/queue/nr_requests
 
 # ZRAM分区参数调整
-echo "128" >/sys/block/zram0/queue/read_ahead_kb
-echo "36" >/sys/block/zram0/queue/nr_requests
+#echo "128" >/sys/block/zram0/queue/read_ahead_kb
+#echo "36" >/sys/block/zram0/queue/nr_requests
 
-# 调整虚拟空间页面集群
-echo "0" >/proc/sys/vm/page-cluster
+# 调整虚拟空间页面集群,设置为0表示关闭cluster预读
+# echo "0" >/proc/sys/vm/page-cluster
 
 # 禁用不必要的转储
 echo "0" >/sys/module/subsystem_restart/parameters/enable_ramdumps
@@ -73,7 +73,7 @@ echo "0" >/sys/fs/f2fs/dm-5/iostat_enable
 echo "0" >/proc/sys/kernel/sched_schedstats
 
 # 调整虚拟内存统计间隔 (默认为1, 也就是1秒)
-echo "20" >/proc/sys/vm/stat_interval
+echo "5" >/proc/sys/vm/stat_interval
 
 sleep 15
 # 禁用MSA和Analytics
